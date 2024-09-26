@@ -1,5 +1,20 @@
+.mobile-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  max-width: 400px;
+  height: 20px;
+}
 .search {
-  position: relative;
+  display: flex;
   width: 80px;   /* 돋보기 전체 크기 */
   height: 80px;  /* 돋보기 전체 크기 */
   margin: 50px auto;
@@ -29,8 +44,11 @@
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   text-align: center;
+  max-width: 400px;
 }
 
 .content p {
@@ -55,7 +73,7 @@
   text-align: center;
   position: fixed;
   bottom: 0px;
-  width: 36.4%;
+  max-width: 400px;
   padding: 10px 4px;
   display: flex;
   justify-content: space-around; /* 내비게이션 바 아이템들 가로 정렬 */
